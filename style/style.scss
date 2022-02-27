@@ -1,0 +1,97 @@
+p{
+  color: #1F2041;
+}
+
+
+.CheckBox {
+  display: none;
+}
+.container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  width: 100%;
+}
+.column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form {
+    width: 100%;
+    &__text {
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+    }
+    &__in {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 15px;
+      height: 44px;
+      border-radius: 4px;
+      border: 1px solid #1F204140;
+
+    }
+    &__in:active, &__in:focus {
+      border: #1F204180 1px solid;
+      outline: none;
+    }
+    &__dropdown {
+      width: 100%;
+    }
+  }
+
+.dropdown{
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding: 15px 13px 7px;
+  flex-direction: column;
+  border: solid #1F204140;
+  border-width: 0 1px 1px 1px;
+  border-radius: 0px 0px 4% 4%;
+  &__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__text {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+  &__menu {
+    width: 90px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: #1F204140 1px solid;
+    background: none;
+  }
+}
+
+.TextField {
+  width: 320px;
+  height: 67px;
+  margin: 0 auto 20px;
+}
+.DropDown {
+  width: 320px;
+  margin: 0 auto;
+}
